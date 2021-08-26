@@ -10,7 +10,7 @@ class VillesController
     public function __construct()
     {
         $this->VilleManager = new VilleManager();
-        $this->VilleManager->loadVilles();
+        $this->VilleManager->LoadVilles();
     }
 
     /** fontion appelée par la route /allusers */
@@ -18,11 +18,12 @@ class VillesController
     {
         // on récupère le tableau des utilisateurs dans une variable $users
         $villes = $this->VilleManager->LoadVilles() ;
+        // print_r($villes);
         // et on charge la vue qui utilisera $users
         require_once "views/villes.php";
     }
 	
-    public function display_villes($zip){
+    public function display_departement($zip){
         $villes = $this->VilleManager->loadDepartement($zip);
         require_once "views/departement.php";
     }
