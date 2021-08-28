@@ -29,7 +29,7 @@
                                 <td><?= $ville->canton ?></td>
                                 <td><?= $ville->population ?></td>
                                 <td><?= $ville->densite ?></td>
-                                <td><?= $ville->surface ?></td>
+                                <td style='font-weight: bolder;color:#5B2C6F'><?= $ville->surface ?></td>
                             </tr>
                                 <?php
                             }

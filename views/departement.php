@@ -23,7 +23,7 @@
                             foreach($villes as $ville){
                                 ?>
                             <tr>
-                                <td><?= $ville->departement?></td>
+                                <td style='font-weight: bolder;color:#5B2C6F'><?= $ville->departement?></td>
                                 <td><?= $ville->nom ?></td>
                                 <td><?= $ville->code_postal ?></td>
                                 <td><?= $ville->canton ?></td>

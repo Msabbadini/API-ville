@@ -33,7 +33,7 @@ Class VilleManager extends DB
    }
 
     public function loadCanton($zipD,$zipC){
-        $villes = json_decode(file_get_contents('http://localhost/loutre/api/'.$zipD.'/'.$zipC));
+        $villes = json_decode(file_get_contents('http://localhost/loutre/api/villes/'.$zipD.'/'.$zipC));
         return $villes;
    }
 
@@ -42,9 +42,12 @@ Class VilleManager extends DB
         return $villes;
     }
 
-    public function UpdateVille($zip,$id){
+    public function loadDensite($zip){
+        $villes = json_decode(file_get_contents('http://localhost/loutre/api/densite/'.$zip));
+        return $villes;
 
     }
+
 }
 
 ?>

@@ -25,7 +25,7 @@
                             <tr>
                                 <td><?= $ville->departement?></td>
                                 <td><?= $ville->nom ?></td>
-                                <td><?= $ville->code_postal ?></td>
+                                <td style='font-weight: bolder;color:#5B2C6F'><?= $ville->code_postal ?></td>
                                 <td><?= $ville->canton ?></td>
                                 <td><?= $ville->population ?></td>
                                 <td><?= $ville->densite ?></td>

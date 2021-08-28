@@ -60,6 +60,13 @@ class API extends DB{
         return json_encode($villes,JSON_UNESCAPED_UNICODE);
     }
     
+    public function loadDensite($zip){
+        $req = $this->getDatabase()->prepare("SELECT * FROM villes_france WHERE code_postal LIKE ?");
+        $req->execute([$zip."%"]);
+        $villes = $req->fetchAll();
+        $req->closeCursor();
+        return json_encode($villes,JSON_UNESCAPED_UNICODE);  
+    }
     public function UpdateVille($id){
 
         $departement = $_POST['departement'];

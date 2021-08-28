@@ -1,7 +1,4 @@
-<?php 
-    var_dump($villes);
-    echo $villes;
-?>
+
 <!DOCTYPE HTML>
 <html>
 <body>
@@ -30,7 +27,7 @@
                                 <td><?= $ville->departement?></td>
                                 <td><?= $ville->nom ?></td>
                                 <td><?= $ville->code_postal ?></td>
-                                <td><?= $ville->canton ?></td>
+                                <td style='font-weight:bolder;color:#5B2C6F'><?= $ville->canton ?></td>
                                 <td><?= $ville->population ?></td>
                                 <td><?= $ville->densite ?></td>
                                 <td><?= $ville->surface ?></td>

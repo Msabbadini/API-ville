@@ -1,14 +1,12 @@
 <!DOCTYPE HTML>
 <html>
-<?php require_once "views/common/header.php"; ?>
-<body class='is-preload'>
-<?php require_once 'views/common/navbar.php'; ?>
-    <div id='wrapper'>
-        <section id='main' class='wrapper'>
-            <div class='inner'>
-                <h1 class='major'>Listes de toutes les Villes</h1>
+<body>
+    <div>
+        <section>
+            <div>
+                <h1>Listes de toutes les Villes</h1>
                     <div>
-                        <table class='table-wrapper'>
+                        <table>
                             <thead>
                             <tr>
                                 <th>Departement</th>
@@ -25,7 +23,7 @@
                             foreach($villes as $ville){
                                 ?>
                             <tr>
-                                <td><?= $ville->departement?></td>
+                                <td style='font-weight: bolder;color:#5B2C6F'><?= $ville->departement?></td>
                                 <td><?= $ville->nom ?></td>
                                 <td><?= $ville->code_postal ?></td>
                                 <td><?= $ville->canton ?></td>
@@ -42,6 +40,5 @@
             </div>
         </section>
     </div>
-<?php require_once "views/common/footer.php";?>
 </body>
 </html>

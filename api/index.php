@@ -89,6 +89,14 @@ try{
                     throw new Exception ('Veuillez indiquer un Code Postal');
                 }
                 break;
+            case 'densite':
+                if(!empty($url[1])){
+                    $controller = new API();
+                    echo $controller->loadDensite($url[1]);
+                }else{
+                    throw new Exception ('Veuillez indiquer un Code Postal');
+                }
+                break;
         }
     }else{
         echo 'Veuillez faire la bonne commande';

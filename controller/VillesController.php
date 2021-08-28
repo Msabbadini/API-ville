@@ -55,6 +55,10 @@ class VillesController
         require_once "views/superficie.php";
     }
 
+    public function display_densite($zip){
+        $villes = $this->VilleManager->loadDensite($zip);
+        require_once "views/densite.php";
+    }
     public function index(){
         require_once 'views/index.php';
     }

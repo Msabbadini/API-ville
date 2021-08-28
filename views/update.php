@@ -9,7 +9,7 @@ if(isset($_POST['modifier'])){
     $canton=htmlspecialchars($_POST['canton']);
     $densite=(int)$_POST['densite'];
     $population=htmlspecialchars($_POST['population']);
-    $surface=htmlspecialchars($_POST['surface']);
+    $surface=(int)$_POST['surface'];
     
     $data=[
         'departement'=>$departement,
@@ -58,9 +58,9 @@ if(isset($_POST['modifier'])){
         <label for="">Population</label>
                 <input type="text" name='population' value='<?=$ville->population?>'>
         <label for="">Densite</label>
-                <input type="number" name='densite' value='<?=$ville->densite?>'>
+                <input type="text" name='densite' value='<?=$ville->densite?>'>
         <label for="">Surface</label>
-                <input type="number" name='surface' value='<?=$ville->surface?>'>
+                <input type="text" name='surface' value='<?=$ville->surface?>'>
         <input type="submit" name='modifier' value="Modifier">
                         </form>
                         <?php } ?>
