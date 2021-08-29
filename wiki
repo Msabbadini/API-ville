@@ -1,0 +1,20 @@
+Pour l'api voici les lignes de commandes a faire dans votre barre de navigation:
+
+  http://localhost/{nom de votre dossier}/api/densite/{code postal}  -> permet d'obtenir la densite d'une ville
+  http://localhost/{nom de votre dossier}/api/superficie/{code postal} ->permet d'obtenir la superficie d'une ville
+  http://localhost/{nom de votre dossier}/api/villes/{code du département}/{code du canton} -> permet d'obtenir les villes d'un canton
+  http://localhost/{nom de votre dossier}/api/villes/{code du departement} -> permet d'obtenir les villes d'un département
+  http://localhost/{nom de votre dossier}/api/population/{code postal} -> permet d'obtenir la population d'une ville
+  http://localhost/{nom de votre dossier}/api/ville/{code postal} -> permet d'obtenir les informations d'une ville
+ 
+ Vous obtiendrez un affichage des données en brut au format JSON si vous voulez une présentation plus classique vous pouvez faire:
+ 
+  http://localhost/loutre/ -> permet d'avoir les listes des commandes
+  http://localhost/loutre/villes -> permet d'avoir l'ensemble de la base de données
+  http://localhost/loutre/villes/{code du département} -> permet d'avoir l'ensemble des villes d'un département
+  http://localhost/loutre/villes/{code du département}/{code du canton} ->permet d'avoir l'ensemble  des villes d'un canton en fonction du département
+  http://localhost/loutre/ville/{code postal} -> permet d'avoir les informations d'une ville
+  http://localhost/loutre/ville/{code postal}/update -> permet d'avoir un formulaire pour modifier les informations d'une ville
+  http://localhost/loutre/population/{code postal} ->permet d'avoir la population d'une ville selon le code postal
+  http://localhost/loutre/densite/{code postal} -> permet d'avoir la densite d'une ville 
+  http://localhost/loutre/superficie/{code postal} -> permet d'avoir la superficie d'une ville 
